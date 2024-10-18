@@ -1,0 +1,246 @@
+* {
+    font-family: "Poppins";
+}
+
+body {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 13em;
+    height: 13em;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.screen-1 {
+    background: #f1f7fe;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #ffffff;
+    gap: 2em;
+}
+
+.screen-1 .label {
+    margin-bottom: -1em;
+    margin-top: -1em;
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.screen-1 .logo {
+    margin-left: 4em;
+    margin-right: 4em;
+    align-self: center;
+}
+
+.screen-1 .login {
+    background: white;
+    box-shadow: 0 0 2em #d0d0d0;
+    font-size: 1.2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-top: 1em;
+}
+
+.screen-1 .login input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .login input::-moz-placeholder {
+    color: rgb(116, 116, 116);
+    font-size: 0.9em;
+}
+
+.screen-1 .login input:-ms-input-placeholder {
+    color: rgb(116, 116, 116);
+    font-size: 0.9em;
+}
+
+.screen-1 .login input::placeholder {
+    color: rgb(116, 116, 116);
+    font-size: 0.9em;
+}
+
+.screen-1 .login ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+    background: white;
+    box-shadow: 0 0 2em #d0d0d0;
+    font-size: 1.2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+}
+
+.screen-1 .password input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .password input::-moz-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .password input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+}
+
+.screen-1 .password ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+    margin-right: -5em;
+}
+
+.screen-1 .login-btn {
+    padding: 1em;
+    background: linear-gradient(to right, #ce1296, purple, cyan, pink);
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.screen-1 .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+}
+
+.screen-1 .footer span {
+    cursor: pointer;
+}
+
+.show-hide {
+    border: none;
+    background: none;
+}
+
+.toast {
+    font-size: 1em;
+    z-index: 9999;
+    position: fixed;
+}
+
+.toast-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 10em;
+        height: 10em;
+    }
+
+    .screen-1 {
+        padding: 1.5em;
+    }
+
+    .screen-1 .label {
+        font-size: 1em;
+    }
+
+    .screen-1 .login,
+    .screen-1 .password {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    .screen-1 .login-btn {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    .screen-1 .footer {
+        gap: 5em;
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+
+    .screen-1 .footer span {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 8em;
+        height: 8em;
+    }
+
+    .screen-1 {
+        padding: 1em;
+    }
+
+    .screen-1 .label {
+        font-size: 0.9em;
+    }
+
+    .screen-1 .login,
+    .screen-1 .password {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+
+    .screen-1 .login-btn {
+        font-size: 0.9em;
+        padding: 0.6em;
+    }
+
+    .screen-1 .footer {
+        gap: 3em;
+        padding-bottom: 1em;
+    }
+
+    .screen-1 .footer span {
+        font-size: 0.7em;
+    }
+}
